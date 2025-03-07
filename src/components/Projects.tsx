@@ -41,7 +41,7 @@ const CalculatorContainer = styled.div`
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 500px; 
+    width: 30vw; 
 `;
 
 const InputsContainer = styled.div`

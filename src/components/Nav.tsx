@@ -22,9 +22,9 @@ const StyledNav = styled.nav`
     padding: 20px;
     width: 30%;
     display: flex;
-    justify-content: center; /* Centers nav links */
+    justify-content: center;
 
-    @media (max-width: 750px) {
+    @media screen and (max-width: 750px) {
         width: 100%;
     }
 
@@ -34,12 +34,13 @@ const StyledNav = styled.nav`
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style: none; /* Remove default list styling */
+        list-style: none;
 
-        @media (max-width: 750px) {
+        @media screen and (max-width: 750px) {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            width: 100%;
         }
     }
 
@@ -48,8 +49,8 @@ const StyledNav = styled.nav`
         display: flex;
         justify-content: center;
 
-        @media (max-width: 750px) {
-            width: auto;
+        @media screen and (max-width: 750px) {
+            width: auto; 
         }
     }
 `;
