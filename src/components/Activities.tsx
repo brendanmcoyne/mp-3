@@ -1,17 +1,5 @@
 import { styled } from 'styled-components';
-
-const ActivityContentDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: lightgray;
-    color: black;
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-    font-size: calc(0.4rem + 1vw);
-`;
+import { ContentDiv } from "./TextComponents.tsx";
 
 const GenTitle = styled.h3`
     margin-top: 5px;
@@ -31,7 +19,7 @@ const SpanLine = styled.span`
 
 export default function Activities() {
     return (
-        <ActivityContentDiv>
+        <ContentDiv>
             <h1>Extracurricular Activities</h1>
             <div className="content">
                 <div id="text">
@@ -66,6 +54,6 @@ export default function Activities() {
                     </ul>
                 </div>
             </div>
-        </ActivityContentDiv>
+        </ContentDiv>
     )
 }

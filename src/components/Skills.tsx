@@ -1,18 +1,5 @@
 import { styled } from 'styled-components';
-
-const SkillsContentDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: lightgray;
-    color: black;
-    padding: 20px;
-    text-align: left;
-    box-sizing: border-box; 
-    width: 100%;
-    font-size: calc(0.4rem + 1vw);
-`;
+import { ContentDiv } from "./TextComponents.tsx";
 
 const CourseworkTitle = styled.h1`
     margin-bottom: 10px;
@@ -31,7 +18,7 @@ const GenText = styled.p`
 
 export default function Skills() {
     return (
-        <SkillsContentDiv>
+        <ContentDiv>
             <CourseworkTitle>Technical Skills</CourseworkTitle>
             <div>
                 <div>
@@ -53,6 +40,6 @@ export default function Skills() {
                     <GenText>Took seven years of Spanish throughout my secondary education</GenText>
                 </div>
             </div>
-        </SkillsContentDiv>
+        </ContentDiv>
     )
 }

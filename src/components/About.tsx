@@ -1,17 +1,5 @@
 import { styled } from 'styled-components';
-
-const AboutContentDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: lightgray;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    font-size: calc(0.5rem + 1vw);
-`;
+import { ContentDiv } from "./TextComponents.tsx";
 
 const FlexContainer = styled.div`
     display: flex;
@@ -42,7 +30,7 @@ const GenImage = styled.img`
 
 export default function About() {
     return (
-        <AboutContentDiv>
+        <ContentDiv>
             <h1>Home</h1>
             <FlexContainer>
                 <GenImage src="/1692936502607.jpeg" alt="Brendan Coyne" width="400px" height="300px"/>
@@ -59,6 +47,6 @@ export default function About() {
                         several different languages, by implementing algorithms and data structures into code.</GenText>
                 </GenTextContainer>
             </FlexContainer>
-        </AboutContentDiv>
+        </ContentDiv>
     );
 }

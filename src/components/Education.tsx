@@ -1,16 +1,5 @@
 import { styled } from 'styled-components';
-
-const EducationContentDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightgray;
-    color: black;
-    padding: 40px 20px;
-    text-align: left;
-    width: 100%;
-    font-size: calc(0.4rem + 1vw);
-`;
+import { ContentDiv } from "./TextComponents.tsx";
 
 const Section = styled.section`
     width: 100%;
@@ -41,7 +30,7 @@ const SubTitle = styled.h4`
 
 export default function Education() {
     return (
-        <EducationContentDiv>
+        <ContentDiv>
             <Section>
                 <Title>Education</Title>
                 <GenTitle>
@@ -71,6 +60,6 @@ export default function Education() {
                 </GenTitle>
                 <SubTitle>Dean's List</SubTitle>
             </Section>
-        </EducationContentDiv>
+        </ContentDiv>
     );
 }

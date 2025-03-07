@@ -1,18 +1,6 @@
 import { styled } from "styled-components";
 import { useCalculator } from "./Calc.tsx";
-
-const ProjectContentDiv = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: lightgray;
-    color: black;
-    padding: 20px;
-    text-align: left;
-    width: 100%;
-    font-size: calc(0.4rem + 1vw);
-`;
+import { ContentDiv } from "./TextComponents.tsx";
 
 const GenTitle = styled.h3`
     font-size: 25px;
@@ -41,7 +29,6 @@ const CalculatorContainer = styled.div`
     background: white;
     padding: 2vw;
     border-radius: 10px;
-    width: clamp(250px, 40vw, 400px); /* Shrinks on smaller screens */
 `;
 
 
@@ -70,7 +57,6 @@ const NumberCircle = styled.input`
     padding: 0;
     margin: 0 auto;
     display: block;
-    line-height: normal; 
     
 `;
 
@@ -110,7 +96,6 @@ const ResultCircle = styled.div`
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
-    line-height: 120px;
 `;
 
 
@@ -124,7 +109,7 @@ export default function Projects() {
     const { num1, setNum1, num2, setNum2, result, add, sub, mul, div, pow, clear } = useCalculator();
 
     return (
-        <ProjectContentDiv>
+        <ContentDiv>
             <h1>Projects</h1>
             <div>
                 <GenTitle>College Football Season in Python</GenTitle>
@@ -176,6 +161,6 @@ export default function Projects() {
                     </ResultCircle>
                 </CalculatorContainer>
             </CalculatorWrapper>
-        </ProjectContentDiv>
+        </ContentDiv>
     );
 }
