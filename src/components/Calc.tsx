@@ -41,8 +41,7 @@ export function useCalculator() {
             setResult(num3);
         }
         if (num1 !== null && num2 !== null) {
-            const num3 = (num1 / num2).toFixed(4);
-            setResult(num3);
+            setResult(parseFloat((num1 / num2).toFixed(4)));
         }
     };
 
