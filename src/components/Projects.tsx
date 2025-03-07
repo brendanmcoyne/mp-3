@@ -106,7 +106,7 @@ const ResultCircle = styled.div`
     border-radius: 50%;
     border: 3px solid black;
     background: lightgray;
-    font-size: 28px;
+    font-size: calc(0.5rem + 1vw);
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -115,7 +115,7 @@ const ResultCircle = styled.div`
 
 
 const ResultDisplay = styled.h4`
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(1rem + 1vw);
     font-weight: bold;
     margin-top: 20px;
 `;
