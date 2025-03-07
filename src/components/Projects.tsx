@@ -70,6 +70,7 @@ const NumberCircle = styled.input`
     margin: 0 auto;
     display: block;
     line-height: normal; 
+    
 `;
 
 const ButtonsContainer = styled.div`
@@ -113,7 +114,7 @@ const ResultCircle = styled.div`
 
 
 const ResultDisplay = styled.h4`
-    font-size: calc(0.4rem + 1vw);
+    font-size: calc(0.5rem + 1vw);
     font-weight: bold;
     margin-top: 20px;
 `;

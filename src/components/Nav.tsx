@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { styled } from 'styled-components';
+import { Link } from "react-router-dom";
+import { styled } from "styled-components";
 
 const StyledLink = styled(Link)`
     padding: 0.5rem;
@@ -10,20 +10,21 @@ const StyledLink = styled(Link)`
     border-radius: 100px;
     text-align: center;
     font-family: "Georgia", "Times New Roman", serif;
-    margin: 15px 20px;
-    width: 200px; 
+    margin: 10px;
+    width: 200px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 `;
 
 const StyledNav = styled.nav`
     background-color: lightskyblue;
     padding: 20px;
-    margin: 0;
     width: 30%;
-    
-    @media screen and (max-width: 750px) {
+    display: flex;
+    justify-content: center; /* Centers nav links */
+
+    @media (max-width: 750px) {
         width: 100%;
     }
 
@@ -33,18 +34,23 @@ const StyledNav = styled.nav`
         display: flex;
         flex-direction: column;
         align-items: center;
+        list-style: none; /* Remove default list styling */
 
-        @media screen and (max-width: 750px) {
+        @media (max-width: 750px) {
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 
     li {
-        display: block;
-        border-radius: 100px;
-        background-color: lightgray;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 750px) {
+            width: auto;
+        }
     }
 `;
 
@@ -53,28 +59,27 @@ export default function Nav() {
         <StyledNav>
             <ul>
                 <li>
-                    <StyledLink to='/'>About</StyledLink>
+                    <StyledLink to="/">About</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/activities'>Activities</StyledLink>
+                    <StyledLink to="/activities">Activities</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/coursework'>Coursework</StyledLink>
+                    <StyledLink to="/coursework">Coursework</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/education'>Education</StyledLink>
+                    <StyledLink to="/education">Education</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/experience'>Experience</StyledLink>
+                    <StyledLink to="/experience">Experience</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/projects'>Projects</StyledLink>
+                    <StyledLink to="/projects">Projects</StyledLink>
                 </li>
                 <li>
-                    <StyledLink to='/skills'>Skills</StyledLink>
+                    <StyledLink to="/skills">Skills</StyledLink>
                 </li>
             </ul>
         </StyledNav>
     );
-};
-
+}
