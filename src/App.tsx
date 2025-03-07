@@ -16,17 +16,22 @@ const MainContent = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    height: 100vh;
-`;
+    height: auto; /* Prevents layout issues */
+    flex-wrap: wrap; /* Ensures content can move properly */
+
+    @media screen and (max-width: 750px) {
+        flex-direction: column; /* Stacks Nav on top */
+    }
+`;;
 
 const Content = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 70%; /* Default: max 70% width */
+    width: 70%; 
 
     @media (max-width: 1000px) {
-        width: 100%; /* Full width at 1000px or smaller */
+        width: 100%; 
     }
 `;
 

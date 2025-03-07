@@ -20,9 +20,8 @@ const StyledLink = styled(Link)`
 const StyledNav = styled.nav`
     background-color: lightskyblue;
     padding: 20px;
+    margin: 0;
     width: 30%;
-    display: flex;
-    justify-content: center;
 
     @media screen and (max-width: 750px) {
         width: 100%;
@@ -34,24 +33,19 @@ const StyledNav = styled.nav`
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style: none;
 
         @media screen and (max-width: 750px) {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            width: 100%;
+            flex-direction: row; !important
+            justify-content: center; !important
+            flex-wrap: wrap; 
         }
     }
 
     li {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        @media screen and (max-width: 750px) {
-            width: auto; 
-        }
+        display: block;
+        border-radius: 100px;
+        background-color: lightgray;
+        margin: 10px; /* Adjust spacing */
     }
 `;
 
