@@ -36,6 +36,8 @@ const GenText = styled.p`
 const GenImage = styled.img`
     flex: 1;
     max-width: 300px;
+    width: 100%;
+    height: auto;
 `;
 
 export default function About() {

@@ -16,13 +16,10 @@ const MainContent = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    height: auto; /* Prevents layout issues */
-    flex-wrap: wrap; /* Ensures content can move properly */
-
-    @media screen and (max-width: 750px) {
-        flex-direction: column; /* Stacks Nav on top */
-    }
-`;;
+    flex-wrap: wrap; 
+    height: auto;
+    min-height: 100vh;
+`;
 
 const Content = styled.div`
     display: flex;
@@ -30,7 +27,7 @@ const Content = styled.div`
     justify-content: flex-start;
     width: 70%; 
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
         width: 100%; 
     }
 `;

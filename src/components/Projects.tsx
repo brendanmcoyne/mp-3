@@ -39,10 +39,11 @@ const CalculatorContainer = styled.div`
     align-items: center;
     justify-content: center;
     background: white;
-    padding: 20px;
+    padding: 2vw;
     border-radius: 10px;
-    width: 30vw; 
+    width: clamp(250px, 40vw, 400px); /* Shrinks on smaller screens */
 `;
+
 
 const InputsContainer = styled.div`
     display: flex;

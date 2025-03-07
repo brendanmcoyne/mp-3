@@ -35,9 +35,8 @@ const StyledNav = styled.nav`
         align-items: center;
 
         @media screen and (max-width: 750px) {
-            flex-direction: row; !important
-            justify-content: center; !important
-            flex-wrap: wrap; 
+            flex-direction: row;
+            justify-content: center;
         }
     }
 
@@ -45,7 +44,7 @@ const StyledNav = styled.nav`
         display: block;
         border-radius: 100px;
         background-color: lightgray;
-        margin: 10px; /* Adjust spacing */
+        margin: 10px; 
     }
 `;
 
